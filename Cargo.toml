@@ -7,6 +7,7 @@ authors = ["Wenkang Xu <kangkang@apache.org>"]
 license = "Apache-2.0"
 documentation = "https://docs.rs/http"
 repository = "https://github.com/WenyXu/no-std-http"
+description = "A library of common HTTP types design for no std environment"
 
 [dependencies]
 bytes = { version = "1", default-features = false }
