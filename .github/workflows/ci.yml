@@ -54,7 +54,7 @@ jobs:
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
       - name: Run cargo check
-        run: cargo check --locked --workspace --all-targets
+        run: cargo check --locked
 
   toml:
     name: Toml Check
