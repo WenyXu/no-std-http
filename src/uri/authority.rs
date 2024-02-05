@@ -27,7 +27,7 @@ impl Authority {
     // Not public while `bytes` is unstable.
     pub(super) fn from_shared(s: Bytes) -> Result<Self, InvalidUri> {
         // Precondition on create_authority: trivially satisfied by the
-        // identity clousre
+        // identity closure
         create_authority(s, |s| s)
     }
 
@@ -78,7 +78,7 @@ impl Authority {
         let mut has_percent = false;
         let mut end = s.len();
         let mut at_sign_pos = None;
-        const MAX_COLONS: u32 = 8; // e.g., [FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:80
+        const MAX_COLONS: u32 = 8;
 
         // Among other things, this loop checks that every byte in s up to the
         // first '/', '?', or '#' is a valid URI character (or in some contexts,
