@@ -1,5 +1,5 @@
 [package]
-name = "http"
+name = "no-std-http"
 version = "0.1.0"
 edition = "2021"
 authors = ["Wenkang Xu <kangkang@apache.org>"]
